@@ -1,0 +1,7 @@
+tqdm
+argparse
+datetime
+moviepy==2.0.0.dev2
+opencv-python
+pathlib
+gradio==3.50.2  # 安定版のバージョンを指定

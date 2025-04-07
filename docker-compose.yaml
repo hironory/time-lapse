@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  timelapse-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    environment:
+      DISPLAY: $DISPLAY
+    stdin_open: true
+    tty: true
+    ports:
+      - "7860:7860" # Gradioはデフォルトでポート7860を使用
+
